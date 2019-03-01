@@ -262,7 +262,7 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  width: 90px;
+  width: 20%;
   height: 35px;
   background-color: #23293B;
   color: #F1F1F1;
@@ -276,6 +276,11 @@ footer {
 .home .walk .walk-text .btn:hover {
   background: #F1F1F1;
   color: #23293B;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;

@@ -87,8 +87,12 @@
       }
 
       .btn {
-        .custom-btn(90px, 35px, @bg-color, @font-color, 1.4rem);
-          
+        .custom-btn(20%, 35px, @bg-color, @font-color, 1.4rem);
+        @media @mobile {
+          // display: flex;
+          // justify-content: center;
+          width: 100%;
+        }  
         
       }
     }
