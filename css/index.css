@@ -1,3 +1,10 @@
+:hover {
+  background: #F1F1F1;
+  color: #23293B;
+}
+@media (max-width: 500px) {
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -188,6 +195,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .earth {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
