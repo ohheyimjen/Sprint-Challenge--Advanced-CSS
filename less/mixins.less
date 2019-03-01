@@ -11,12 +11,18 @@
     color: @font-color;
     cursor: pointer;
     font-size: @font-size;
+    .center();
+    align-items: center;
+    border-radius: 8px;
+
+    &:hover {
+        background: @font-color;
+        color: @bg-color;
+    }
+
 }
 
-&:hover {
-    background: @font-color;
-    color: @bg-color;
-}
+
 
 @media @mobile {
     width: 100%;
