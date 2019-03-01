@@ -20,6 +20,18 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    
+    .sky, .launch {
+      @media @mobile {
+        display: none;
+      }
+    }
+    .blast {
+      @media @mobile {
+        width: 100%;
+      }
+    }
+   
 
     img {
       width: 28%;
