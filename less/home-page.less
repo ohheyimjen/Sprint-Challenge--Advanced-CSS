@@ -3,7 +3,9 @@
 .home {
 
   .intro {
-
+    .earth {
+      border-radius: 5px;
+    }
     h2 {
       padding: 15px;
     }
@@ -18,6 +20,18 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    
+    .sky, .launch {
+      @media @mobile {
+        display: none;
+      }
+    }
+    .blast {
+      @media @mobile {
+        width: 100%;
+      }
+    }
+   
 
     img {
       width: 28%;
@@ -46,8 +60,23 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column-reverse;
+      padding: 0 3%;
+      
+      
+      
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        width: 100%;
+        
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +87,24 @@
       }
 
       .btn {
+        .custom-btn(20%, 35px, @bg-color, @font-color, 1.4rem);
+        @media @mobile {
+          // display: flex;
+          // justify-content: center;
+          width: 100%;
+        }  
+        
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobile {
+        width: 100%;
+        margin: 20px 1%;
+      }
       
       img {
         width: 100%;
